@@ -8,26 +8,26 @@ echo  "---"
 
 if [ $1 == "init" ]
   then
-      terraform init -var-file=dev.tfvars
+      terraform init ./stack/
       pwd
 fi
 
 if [ $1 == "plan" ]
   then
-      terraform plan -var-file=dev.tfvars
+      terraform plan  -var-file=./stack/dev.tfvars ./stack/
       pwd
 fi
 
 
 if [ $1 == "apply" ]
   then
-      terraform apply -var-file=dev.tfvars  -auto-approve
+      terraform apply -var-file=./stack/dev.tfvars  -auto-approve ./stack/
       pwd
 fi
 
 
 if [ $1 == "destroy" ]
   then
-      terraform destroy -var-file=dev.tfvars  -auto-approve
+      terraform destroy -var-file=./stack/dev.tfvars  -auto-approve ./stack/ 
       pwd
 fi

@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"","Source":"","Dir":"stack"},{"Key":"vpc","Source":"./modules/aws-vpc","Dir":"modules/aws-vpc"},{"Key":"ec2","Source":"../modules/aws-ec2-instance","Dir":"modules/aws-ec2-instance"},{"Key":"jenkin_master_sg","Source":"../modules/aws-sec-grp","Dir":"modules/aws-sec-grp"}]}
