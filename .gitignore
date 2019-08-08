@@ -1,1 +1,4 @@
 terraform-provider-aws_v2.23.0_x4
+.terraform
+./stack/terraform.tfstate
+./stack/terraform.tfstate.backup
