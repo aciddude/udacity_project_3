@@ -39,10 +39,9 @@ module "vpc" {
   tags = {
     Owner       = var.owner
     Environment = var.environment
-    Name = var.stack_name
   }
 
-  vpc_tags = {
-    Name = var.stack_name
-  }
+  # vpc_tags = {
+  #   Name = var.stack_name
+  # }
 }
